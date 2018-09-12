@@ -22,6 +22,8 @@
                 return;
             }
 
+            echo "lorenzo montecalbo";
+
             $topic = $this->data[$entryData['report']];
 
             $topic->broadcast($entryData);
