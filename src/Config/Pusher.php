@@ -21,6 +21,7 @@
             
 
             if(!array_key_exists($entryData['report'], $this->data)){
+                echo "this is false";
                 return;
             }
 
