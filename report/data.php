@@ -12,9 +12,11 @@
             $result .= str_replace("'", '"', $data[$i]);
         }
         $result = str_replace("False", "false", $result);
+
+        echo json_decode($result);
         
         $entryData = array(
-            'report' => $data
+            'report' => json_decode($result)
         );
 
         $context = new ZMQContext();
