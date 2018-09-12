@@ -12,7 +12,7 @@
 
     $pull->on('message', array($pusher, 'onReport'));
 
-    $webSock = new React\Socket\Server('0.0.0.0:8080', $loop);
+    $webSock = new React\Socket\Server('0.0.0.0:0', $loop);
 
     $webServer = new Ratchet\Server\IoServer(
         new Ratchet\Http\HttpServer(
