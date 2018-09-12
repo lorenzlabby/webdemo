@@ -15,7 +15,7 @@
 
         $entryData = array(
             'report' => 'report',
-            'data' => json_encode($result)
+            'data' => json_decode($result)
         );
 
         $context = new ZMQContext();
