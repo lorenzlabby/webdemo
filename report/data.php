@@ -14,9 +14,10 @@
         $result = str_replace("False", "false", $result);
 
         echo json_encode($result);
+        $_POST['report'] = $result;
 
         $entryData = array(
-            'report' => $result
+            'report' => $_POST['report']
         );
 
         $context = new ZMQContext();
