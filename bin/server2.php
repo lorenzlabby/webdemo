@@ -1,6 +1,7 @@
 <?php
     set_include_path(dirname(__DIR__));
     require("vendor/autoload.php");
+    require("src/Config/Chat.php");
 
     use Ratchet\Server\IoServer;
     use Ratchet\Http\HttpServer;
