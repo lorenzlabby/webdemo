@@ -13,11 +13,9 @@
         }
         $result = str_replace("False", "false", $result);
 
-        $_POST['report'] =  "report";
-
         $entryData = array(
             'report' => 'report',
-            'data' => $result
+            'data' => json_encode($result)
         );
 
         $context = new ZMQContext();
