@@ -13,7 +13,7 @@
         }
         $result = str_replace("False", "false", $result);
 
-        echo $result;
+        echo json_encode($result);
 
         $entryData = array(
             'report' => json_decode($result)
