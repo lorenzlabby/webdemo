@@ -8,7 +8,7 @@
 
     $context = new React\ZMQ\Context($loop);
     $pull = $context->getSocket(ZMQ::SOCKET_PULL);
-    $pull->bind('tcp://0.0.0.0:5555');
+    // $pull->bind('tcp://0.0.0.0:5555');
 
     $pull->on('message', array($pusher, 'onReport'));
 
