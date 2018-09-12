@@ -1,7 +1,7 @@
 <?php
     namespace Config;
-
-    require(dirname(__DIR__)."/vendor/autoload.php");
+    set_include_path(dirname(__DIR__));
+    require("vendor/autoload.php");
 
     use Ratchet\ConnectionInterface;
     use Ratchet\Wamp\WampServerInterface;

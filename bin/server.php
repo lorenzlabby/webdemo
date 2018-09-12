@@ -1,7 +1,7 @@
 <?php
-
-    require(dirname(__DIR__) . "/vendor/autoload.php");
-    require(dirname(__DIR__)."/src/Config/Pusher.php");
+    set_include_path(dirname(__DIR__));
+    require("vendor/autoload.php");
+    require("src/Config/Pusher.php");
 
     $loop = React\EventLoop\Factory::create();
     $pusher = new Config\Pusher;
