@@ -18,14 +18,9 @@
         public function onReport($entry){
             $entryData = json_decode($entry, true);
    
-            
-
             if(!array_key_exists($entryData['report'], $this->data)){
-                echo "this is false";
                 return;
             }
-
-            echo "lorenzo montecalbo";
 
             $topic = $this->data[$entryData['report']];
 
