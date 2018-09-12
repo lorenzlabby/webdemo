@@ -3,9 +3,9 @@ var conn = new ab.Session('ws://149.28.138.51/ws2/:5555',
         conn.subscribe('report', function(topic, data){
             var dataLoop = data.data;
             console.log(dataLoop);
-            dataLoop.forEach(function(element){
-                console.log(element);
-            });
+            for( dataLoop in d){
+                console.log(d);
+            };
 
         });
     },
