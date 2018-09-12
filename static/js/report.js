@@ -1,6 +1,6 @@
 var conn = new ab.Session('ws://149.28.138.51/ws2/:5555',
     function(){
-        conn.subscribe('arg0', function(topic, data){
+        conn.subscribe('report', function(topic, data){
             console.log('New article published to category' + topic + ' : ' + data);
         });
     },
