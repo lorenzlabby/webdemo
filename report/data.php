@@ -16,7 +16,7 @@
         $_POST['report'] =  "report";
 
         $entryData = array(
-            'report' => $_POST['report'],
+            'report' => 'report',
             'data' => $result
         );
 

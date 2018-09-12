@@ -17,7 +17,7 @@
 
         public function onReport($entry){
             $entryData = json_decode($entry, true);
-            var_dump($entryData);
+   
             
 
             if(!array_key_exists($entryData['report'], $this->data)){
